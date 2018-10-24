@@ -1,0 +1,47 @@
+
+alias ezsh="${EDITOR} ~/.zshrc"
+alias ealias="${EDITOR} ~/.zsh_alias"
+alias eexports="${EDITOR} ~/.zsh_exports"
+alias etokens="${EDITOR} ~/.zsh_tokens"
+
+alias evim="${EDITOR} ~/.vimrc"
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias cdl='source change_dir_and_ls.sh'
+
+alias opush='git push -u origin HEAD'
+alias push='git push'
+alias checkout='git checkout'
+alias branch='checkout -b'
+alias master='checkout master'
+alias stable='checkout stable'
+alias fetch='git fetch --all'
+alias pull='git pull'
+alias rebase='git rebase -i -v'
+alias glog='git_graph'
+alias gall='folder_branch'
+alias gr='gitr'
+alias gnice='gall | sort -nk 1'
+alias force='opush --force-with-lease'
+alias commit='git commit -S -v'
+alias gs='git status'
+alias gd='git diff'
+alias hunk='git add --patch '
+alias pick='git cherry-pick'
+alias gitall='git log --graph --all --decorate --simplify-by-decoration'
+
+alias nano='vim'
+alias micro='vim'
+
+alias dir_sizes='du -sh ./* | sort -h -r'
+alias agent='. /usr/local/bin/start_agent'
+
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+alias gitrun='kubectl -n gitlab describe pod '
+
+alias kcgc='kubectl config get-contexts'
